@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/TSN_icon.png">
+    <title>ТСН - Завдання 1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: crimson;
+            border-bottom: 2px solid black;
+        }
+        header p{
+            margin-top: 0px;
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            display: inline;
+        }
+        header img{
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+        }
+        main{
+            margin-top: 30px;
+            display: block;
+        }
+        article{
+            margin: 15px;
+            width: 70%;
+            border: 2px solid silver;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        article img{
+            border-radius: 10px 10px 0 0;
+            height: 400px;
+            width: 100%;
+        }
+        article a{
+            height: 17px;
+            font-size: 15px;
+            background-color: pink;
+            width: 100%;
+            display: block;
+            color: black;
+            padding: 1px;
+            border-radius: 0 0 10px 10px ;
+        }
+        body{
+            min-height: 95%;
+            position: relative;
+        }
+        footer{
+            position: absolute;
+            display: block;
+            width: 100%;
+            padding: 0;
+            height: 1%;
+            border-top: 2px solid black;
+        }
+        footer p{
+            float: right;
+            margin: 0 10px;
+            font-size: 15px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+        <!--Створити HTML сторінку на довільну тему. 
+        Сторінка повинна містити 2-3 статті(!), зображення(!), список статей(!), таблицю, гіперпосилання(!)  та дані про автора(!).
+        Зробити розмітку із використанням елементів семантичного верстання(!).-->
+        <header><center><p>ТСН вражає</p><img src="img/TSN_icon.png" alt=""></center></header>
+        <nav>
+            <ul>
+                <li><a href="#news1">Новина 1</a></li>
+                <li><a href="#news2">Новина 2</a></li>
+                <li><a href="#news3">Новина 3</a></li>
+            </ul>
+        </nav>
+        <main>
+            <center>
+                <article id="news1"><img src="img/news1.jpeg" alt=""><p>Київ був би взятий, якби росіянам вдалося десантуватися та захопити аеродром у Гостомелі - Буданов</p>
+                <a href="#">Дізнатися більше</a>
+                </article>
+                <article id="news2"><img src="img/news2.jpeg" alt=""><p>У зоні стихійного лиха в Туреччині стався ще один землетрус</p>
+                <a href="#">Дізнатися більше</a>
+                </article>
+                <article id="news3"><img src="img/news3.jpeg" alt=""><p>У Запоріжжі та Херсоні пролунали вибухи: що відбувається</p>
+                <a href="#">Дізнатися більше</a>
+                </article>
+            </center>
+        </main>
+        <footer>
+            <p> Зановник сайту: Вогар Андій Юрійович</p>
+        </footer>
+</body>     
+</html>
