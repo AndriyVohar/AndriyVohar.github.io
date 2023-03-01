@@ -10,6 +10,8 @@
         body{
             margin: 0;
             padding: 0;
+            min-height: 95%;
+            position: relative;
         }
         header{
             display: block;
@@ -56,9 +58,11 @@
             padding: 1px;
             border-radius: 0 0 10px 10px ;
         }
-        body{
-            min-height: 95%;
-            position: relative;
+        table, th, td{
+            border: 1px solid black;
+        }
+        table{
+            margin: 20px 0;
         }
         footer{
             position: absolute;
@@ -99,6 +103,21 @@
                 <article id="news3"><img src="img/news3.jpeg" alt=""><p>У Запоріжжі та Херсоні пролунали вибухи: що відбувається</p>
                 <a href="#">Дізнатися більше</a>
                 </article>
+            
+                <table>
+                    <tr>
+                        <th>Кількість глядачів <br> за останній місяць</th>
+                        <th>Оцінка сайту</th>
+                        <th>Дата створення сайту</th>
+                        <th>Дата останнього редагування сайту</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td><input type="text"  placeholder="Введіть свою оцінку"></td>
+                        <td>25.02.2023</td>
+                        <td>01.03.2023</td>
+                    </tr>
+                </table>
             </center>
         </main>
         <footer>
