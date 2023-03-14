@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feedback.css">
+    <title>ТСН Feedback - Завдання 2</title>
+</head>
+<body>
+    <header><a href="index.html"><p>ТСН вражає</p></a><img src="img/TSN_icon.png" alt=""><span><a href="registration.html"><p>Реєстрація</p></a><a href="feedback.html"><p>Feedback</p></a></span></header>
+    
+    <main>
+    <center>
+        <form action="" method="get">
+        <article>
+            <label>(Не обов'язково) Введіть номер телефону для зворотного зв'язку: </label><br>
+            <input type="text" class="phone-email" name="phone-number" placeholder="Наприклад +380950940234" ><br> 
+        </article>
+        <article>
+            <label>(Не обов'язково) Введіть email для зворотного зв'язку: </label><br>
+            <input type="email" class="phone-email" name="email" placeholder="Наприклад: example@gmail.com" ><br>
+        </article>
+            <article>
+            <label>Категорія: </label>
+            <select name="select" id="select">
+                <option value="skarga">Скарга</option>
+                <option value="pidtrimka">Підтримка</option>
+                <option value="pobazhannya">Побажання</option>
+            </select><br>
+        </article>
+
+        <article>
+            <label>Ваше повідомлення:</label><br>
+            <textarea name="text-area"></textarea><br>
+        </article>
+        
+        <article>
+            <label>Прикріпити файл:</label>
+            <input type="file" accept="image/*">
+        </article>
+
+        <article>
+            <label>Способ зворотного зв'язку: </label>
+            <select name="select" id="select">
+                <option value="phone">Передзвонити</option>
+                <option value="email">Відписати на електронну пошту</option>
+                <option value="none">Не треба відповідати</option>
+            </select><br>
+        </article>    
+        <input type="submit" onclick="alert('Дякуємо'); location.reload()">
+        </form>
+    </center>
+    </main>
+
+</body>
+</html>

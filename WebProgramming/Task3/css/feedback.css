@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 95%;
+    position: relative;
+}
+
+/*Header*/
+header{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: crimson;
+    border-bottom: 2px solid black;
+}
+header p{
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    display: inline;
+}
+header img{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+header span{
+    float: right;
+}
+header span a{
+    margin: 0 20px;
+}
+
+/*Main*/
+main{
+    margin: 10px;
+}
+article{
+    margin: 20px;
+}
+textarea{
+    height: 200px;
+    width: 300px;
+}
+.phone-email{
+    width: 200px;
+}

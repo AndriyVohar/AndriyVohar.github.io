@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/TSN_icon.png">
+    <link rel="stylesheet" href="css/registration.css">
+    <title>ТСН Реєстрація - Завдання 2</title>
+</head>
+<body>
+    <!--Створити HTML сторінку на довільну тему. 
+    Сторінка повинна містити 2-3 статті(!), зображення(!), список статей(!), таблицю, гіперпосилання(!)  та дані про автора(!).
+    Зробити розмітку із використанням елементів семантичного верстання(!).-->
+    <header><a href="index.html"><p>ТСН вражає</p></a><img src="img/TSN_icon.png" alt=""><span><a href="registration.html"><p>Реєстрація</p></a><a href="feedback.html"><p>Feedback</p></a></span></header>
+    <main>
+    <center>
+        <form method="post" name="registration">
+            <label for="login">Логін:</label><br>
+            <input type="text" id="login" name="login" placeholder="Приклад: Programmer" required><br>
+            
+            <label>Пароль:</label><br>
+            <input type="password" name="pasdword"required><br>
+            
+            <label>Повторіть пароль:</label><br>
+            <input type="password" name="password"required><br>
+            
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Приклад example@gmail.com"required><br>
+            
+            <label>Номер телефону:</label><br>
+            <input type="text" name="phone number" placeholder="Приклад: +380950960243"><br>
+
+            <button type="button" onclick="this.disabled='disabled'"></button>
+            <p>Натиснувши кнопку ви погоджуєтесь з <a href="#">умовами</a> користування</p> <br>
+            
+            <input type="submit" value="Увійти">
+        </form>
+    </center>
+    </main>
+</body>     
+</html>
