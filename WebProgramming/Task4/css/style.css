@@ -37,12 +37,19 @@ main{
     margin-top: 30px;
     display: block;
 }
+.news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+}
 article{
-    margin: 15px;
-    width: 70%;
+    margin: 15px;   
     border: 2px solid silver;
     border-radius: 10px;
     font-size: 20px;
+}
+article p{
+    min-height: 70px;
 }
 article img{
     border-radius: 10px 10px 0 0;
@@ -101,9 +108,13 @@ table{
         display: block;
         font-size: 12px;
     }
+    .news {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
     article{
         margin-bottom: 20px;
-        width: 70%;
         border: 2px solid silver;
         border-radius: 5px;
         font-size:15px;
