@@ -140,4 +140,8 @@ table{
         margin: 20px 0;
         font-size: 7px;
     }
+    table input{
+        max-width: 50px;
+        font-size: 8px;
+    }
   }
