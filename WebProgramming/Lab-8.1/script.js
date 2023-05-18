@@ -14,10 +14,9 @@ function Accountant(fullName,position,sallary,childrenQuantity,seniority){
     this.sallary = sallary;
     this.childrenQuantity = childrenQuantity;
     this.seniority = seniority; 
-
-    this.getFullInformation = function(){
-        return "ПІБ: "+this.fullName+". Посада: "+this.position+". Заробітна плата: "+this.sallary+". Кількість дітей: "+this.childrenQuantity+". Стаж: "+this.seniority;
-    };
+}
+Accountant.prototype.getFullInformation = function(){
+    return "ПІБ: "+this.fullName+". Посада: "+this.position+". Заробітна плата: "+this.sallary+". Кількість дітей: "+this.childrenQuantity+". Стаж: "+this.seniority;
 }
 let accountant1 = new Accountant("Вогар Андрій Юрійович","Студент",0,0,"1 курс");
 console.log(accountant1.getFullInformation());
@@ -35,11 +34,10 @@ console.log(accountant1.getFullInformation());
     this.autoName = autoName;
     this.autoNumber = autoNumber;
     this.autoColor = autoColor; 
-
-    this.getFullInformation = function(){
-        return "ПІБ: "+this.fullName+". Марка: "+this.autoName+". Номер машини: "+this.autoNumber+". Колір: "+this.autoColor;
-    };
 }
+DAI.prototype.getFullInformation = function(){
+    return "ПІБ: "+this.fullName+". Марка: "+this.autoName+". Номер машини: "+this.autoNumber+". Колір: "+this.autoColor;
+};
 let dai1 = new DAI("Вогар Андрій Юрійович","Ford Mustang","AO7799BC","Червоний");
 console.log(dai1.getFullInformation());
 
@@ -56,10 +54,9 @@ console.log(dai1.getFullInformation());
     this.quantityEmployees = quantityEmployees;
     this.branch = branch;
     this.address = address; 
-
-    this.getFullInformation = function(){
-        return "Назва підприємства: "+this.name+". Кількість співробітників: "+this.quantityEmployees+". Галузь: "+this.branch+". Адреса: "+this.address;
-    };
 }
+Company.prototype.getFullInformation = function(){
+    return "Назва підприємства: "+this.name+". Кількість співробітників: "+this.quantityEmployees+". Галузь: "+this.branch+". Адреса: "+this.address;
+};
 let company1 = new Company("Вогар",1000000,"ІТ","м.Мукачево, вул.Духновича");
 console.log(company1.getFullInformation());
