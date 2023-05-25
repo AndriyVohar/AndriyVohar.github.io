@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Підпиємство</title>
+</head>
+<body>
+    <style>
+        .companies{
+            border: 2px solid silver;
+            margin: 4px;
+            width: 40%;
+        }
+    </style>
+    <center>
+        <form action="" method="get" onsubmit="return false">
+            <label for="name" >Назва</label>
+            <input type="text" id="name"><br>
+            <label for="Employees">Кількість працівників</label>
+            <input type="text" id="employees"><br>
+            <label for="Branch">Галузь</label>
+            <input type="text" id="branch"><br>
+            <label for="Adress" >Адреса</label>
+            <input type="text" id="address"><br>
+            <button onclick="Click()">Додати компанію</button>
+        </form>
+        
+        <br><br>
+        <p>Знайти інформацію за кодом: 
+        <input type="number" id="findByCode"></p><button id="submitFindByCode" onclick="SubmitFindByCode()">Submit</button><br>
+        <div id="infoByCode"></div><br><br>
+    
+        <p>Знайти компанії за галуззю: 
+        <input type="text" id="findByBranch"></p><button id="submitFindByBranch" onclick="SubmitFindByBranch()">Submit</button><br>
+        <div id="infoByBranch"></div><br><br>
+    
+        <p>Код компанії: <input type="number" id="editByCode"> Що будемо міняти: <input type="text" id="editByName"> Нові дані: <input type="text" id="editToInfo"></p><button id="submitEdit" onclick="Edited()">Submit</button>
+        <div id="editedCompany"></div><br><br>
+
+        <p>Видалити компанію за кодом: <input type="number" name="" id="deleteByNumber"></p><button id="submitDelete" onclick="Deleted()">Submit</button>
+        <div id="deleteCompany"></div>
+    </center> 
+</body>
+</html>
