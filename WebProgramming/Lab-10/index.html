@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>Перевод грошей</title>
+
+    <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            td {
+                text-align: center;
+                padding: 5px;
+            }
+    </style>
+</head>
+<body>
+    <center>
+    <table>
+        <tr>
+            <td><select name="selectValute" id="selectValute"></select></td>
+            <td><select name="selectValute" id="selectToValute"></select></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="inputAmountMoney"></td>
+            <td id="result"></td>
+        </tr>
+    </table>
+    <button onclick="Click()">Знайти</button>
+    </center>
+    
+    <script>
+        let selectValute = document.getElementById("selectValute");
+        let selectToValute = document.getElementById("selectToValute");
+        function showCurrency() {
+            fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                let selectedCurrency = [0, 1, 3, 6, 10, 11, 14, 23, 24, 27, 30, 31, 32];
+                for (let element of selectedCurrency) {
+                    let write = `<option value="${element}">${data[element].txt}</option>`;
+                    selectValute.innerHTML += write;
+                    selectToValute.innerHTML += write;
+                }
+            });
+        }
+        showCurrency();
+
+        function Click(){
+            fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                let selectedCurrency = [0, 1, 3, 6, 10, 11, 14, 23, 24, 27, 30, 31, 32];
+                let a1 = data[selectValute.value].rate;
+                let b1 = data[selectToValute.value].rate;
+                let a2 = document.getElementById("inputAmountMoney").value;
+                let b2 = a2*a1/b1;
+                document.getElementById("result").innerHTML=b2.toString();
+            });
+        }
+    </script>
+</body>
+</html>
